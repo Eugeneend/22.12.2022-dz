@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,700&family=Oswald:wght@500&display=swap');
+
+:root{
+    --colorblue1: #34497C;
+    --colorblue2: #4B69b1;
+    --colorgrey1: #585858;
+    --colorgrey2: #828282;
+    --coloryellow1: #FBA702;
+    --colorblue3: #253458;
+}
+
+body{ font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    color: var(--colorgrey1);
+
+}
+.logo {
+    text-align: center;
+}
+
+.header{
+    background-color: var(--colorblue2);
+    color: #fff;
+    
+}
+
+.header .row{min-height: 110px;}
+
+@media screen and (min-width:768px) {
+    
+    .header img {width: 100%;}
+    .form_wrapper form{
+        padding: 50px 30px;
+        
+    }
+    form h2{background-image: url(/Images/Group\ 10.svg);}
+    
+   
+}
+
+.form{background-image:url(/Images/b846355c7b9411ac762bc2b1499df243\ \(2\).jfif);
+background-position: center top;
+background-size: cover;
+padding: 70px;
+color: #fff;
+}
+.form_wrapper form{
+    background-color: var(--colorblue2);
+padding: 50px 15px;
+display: flex;
+flex-direction: column;
+text-align: center;}
+
+input, button{
+    outline: none;
+    border: none;
+    margin: 7.5px 0;
+    padding: 15px 30px;
+    background-color: var(--colorblue3);
+    color: #fff;
+}
+
+input:focus{background-color: #141c2e;
+    color: #fff;}
+
+    /* input::placeholder{color: #ff0000;} */
+
+button{
+    border-radius: 3px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color:#fff;
+    padding: 7.5px 45px;
+}
+
+button:hover{
+    background-color: #0a101d;
+}
+
+    form h2{
+    background-repeat: repeat-x;
+    background-position: center;
+    font-size: 36px;
+   line-height: 22px;
+text-transform: uppercase;
+font-weight: bold;
+margin-bottom:30px ;}
+
+form span {
+    display: inline-block;
+    background-color: var(--colorblue2);
+    padding: 15px 30px;
+}
+
+form p{
+    font-size: 1.5em;
+    font-weight: bold;
+
+
+}
+
+.form_ribbon{
+    background-image: url(/Images/lenta.svg);
+    background-repeat: repeat-x;
+    height: 117px;
+    margin: 30px -35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.form_ribbon::before,
+.form_ribbon::after {content:'';
+    display: block;
+    width: 0;
+    height: 0;
+   
+    border-top: 15px solid #A86F00;
+    position: absolute;
+    bottom: -15px;
+    }
+
+.form_ribbon::before{
+    
+    border-left:20px solid transparent;
+    left: 0;
+}
+
+.form_ribbon::after{
+    border-right:20px solid transparent;
+    right: 0;
+}
+
+/* steps */
+
+.steps {
+    background-image: url(/Images/1313.jpg);
+    padding: 50px 0;
+    text-align: center;
+}
+.steps_pic {
+    background-color:var(--colorblue1);
+    padding: 35px 0;
+    position: relative;
+    margin: 30px 0;
+}
+
+.steps_item:hover .steps_pic{
+    background-color: var(--coloryellow1);
+}
+.steps_pic::after{content: '';
+display: block;
+width: 0;
+height: 0;
+position: absolute;
+border-top: 15px solid var(--colorblue1);
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+bottom: -15px ;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.steps_item:hover .steps_pic::after{
+    border-top: 15px solid var(--coloryellow1);
+}
+
+.steps h3 {
+    color: var(--colorblue3);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.steps_item:hover{
+animation-name: shake ;
+animation-duration: 0.5s;}
+
+@keyframes shake {
+    0%, 40%, 80% {transform: translateX(-10px);}
+    20%, 60%, 100% {transform: translateX(10px);}
+}
+
+
+
+
+
